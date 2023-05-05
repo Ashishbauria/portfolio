@@ -15,13 +15,14 @@ export default function About(props: IAppProps) {
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
         src="/Images/logo2.jpg"
-        className=" md:mb-0 flex-shrink-0 w-28 h-28 rounded-full object-cover md:rounded-xl md:w-64 md:h-64 xl:w-[300px] xl:h-[300px] mt-36 md:mt-2"
+        className=" md:mb-0 flex-shrink-0 w-20 h-20 rounded-full object-cover md:rounded-xl md:w-64 md:h-64 xl:w-[300px] xl:h-[300px] mt-36 md:mt-2 border-2 border-gray-500"
       />
       <motion.div
         initial={{ y: -200, opacity: 0, scale: 0.5 }}
         whileInView={{ y: 0, opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 1.2 }}
-        className=" p-4 md:px-10 rounded-xl  space-y-4  min-w-[320px] sm:w-[500px] md:w-[500px] xl:w-[700px] bg-transparent/40"
+        className=" px-[10px] md:px-10 rounded-xl  space-y-4  min-w-[320px] sm:w-[500px] md:w-[500px] xl:w-[700px] bg-transparent/40"
       >
         <h4 className=" text-xl sm:text-3xl font-semibold">{`<Profile />`}</h4>
         <div className="text-base ">

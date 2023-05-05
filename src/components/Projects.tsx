@@ -143,7 +143,7 @@ const ProjectCard = ({ project }: Props) => {
             <BiLinkExternal />
           </a>
         </div>
-        <div className="flex gap-2 my-4 md:my-5">
+        <div className="flex gap-2 my-3 md:my-5">
           {skills.map((item: any, index: number) => (
             <Image
               src={`/Images/${item}`}

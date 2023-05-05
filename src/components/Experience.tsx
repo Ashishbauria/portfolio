@@ -13,7 +13,7 @@ const Experience = () => {
       <h2 className="absolute top-20 text-2xl uppercase text-center text-gray-400 pb-2 tracking-[15px]">
         work experience
       </h2>
-      <div className="w-full flex space-x-5 overflow-x-scroll p-0 md:p-10 snap-x overflow-y-hidden snap-mandatory items-center mt-[10px] scrollbar scrollbar-track-slate-500/20 scrollbar-thumb-[#2c2c2c] ">
+      <div className="w-full flex space-x-5 overflow-x-scroll p-0 md:p-10 snap-x overflow-y-hidden snap-mandatory items-center mt-[10px] scrollbar-thin scrollbar-track-slate-500/20 scrollbar-thumb-[#2c2c2c] ">
         <ExperienceCard />
       </div>
     </motion.div>
@@ -37,7 +37,7 @@ const ExperienceCard = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2 }}
       viewport={{ once: true }}
-      className="flex flex-col items-center rounded-xl space-y-7 flex-shrink-0 w-[340px] sm:w-[540px] md:w-[700px] xl:[900px] mx-auto overflow-hidden snap-center p-4 xl:opacity-70 hover:opacity-100 shadow-md shadow-transparent cursor-default transition-opacity duration-200 sm:py-10  bg-transparent/40"
+      className="flex flex-col items-center rounded-xl space-y-7 flex-shrink-0 w-[340px] sm:w-[540px] md:w-[700px] xl:[900px] mx-auto overflow-hidden snap-center pl-4 py-2 xl:opacity-70 hover:opacity-100 shadow-md shadow-transparent cursor-default transition-opacity duration-200 sm:py-10  bg-transparent/40"
     >
       <Image
         src="/Images/company1.jpg"
@@ -50,7 +50,7 @@ const ExperienceCard = () => {
         <h4 className="text-2xl sm:text-4xl font-light text-center">
           Frontend Developer Intern
         </h4>
-        <p className="font-bold text-xl sm:text-2xl text-center sm:mt-2">
+        <p className="font-bold text-xl sm:text-2xl text-center mt-0 sm:mt-2">
           FuelCab India
         </p>
         <div className="flex gap-2 mt-2">
@@ -65,7 +65,7 @@ const ExperienceCard = () => {
             />
           ))}
         </div>
-        <p className="uppercase my-3 text-gray-300 ml-4">Feb 2023 - Present</p>
+        <p className="uppercase my-[5px] md:my-4 text-gray-300 ml-4">Feb 2023 - Present</p>
         <ul className=" list-disc space-y-3 ml-5 text-sm md:text-[16px] text-left font-poppins">
           <li>
             Developed and maintained FuelCab India&apos;s website using HTML,
