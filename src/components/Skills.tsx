@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Skills = () => {
   const skills = [
@@ -41,8 +42,11 @@ const Skills = () => {
 type Props = any;
 const Skill = ({ item }: Props) => {
   return (
-    <img
-      src={`Images/${item}`}
+    <Image
+      src={`/Images/${item}`}
+      alt="logo"
+      width={500}
+      height={500}
       className="rounded-full border-2 border-gray-600 object-cover w-16 h-16 sm:w-20 sm:h-20 hover:animate-ping transition duration-300 ease-in-out"
     />
   );

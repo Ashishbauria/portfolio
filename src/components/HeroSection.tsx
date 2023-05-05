@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   const [text, count] = useTypewriter({
@@ -17,8 +18,11 @@ const HeroSection = () => {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
+      <Image
         src="/Images/logo.jpg"
+        alt="logo"
+        width={500}
+        height={500}
         className="w-32 h-32 relative rounded-full mx-auto object-cover "
       />
       <div

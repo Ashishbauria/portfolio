@@ -12,7 +12,7 @@ export default function About(props: IAppProps) {
       <motion.img
         initial={{ x: -200, opacity: 0, scale: 0.5 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
         transition={{ duration: 1.2 }}
         src="/Images/logo2.jpg"
         className=" md:mb-0 flex-shrink-0 w-28 h-28 rounded-full object-cover md:rounded-xl md:w-64 md:h-64 xl:w-[300px] xl:h-[300px] mt-36 md:mt-2"
@@ -27,7 +27,7 @@ export default function About(props: IAppProps) {
         <div className="text-base ">
           <ul className=" list-disc space-y-2 md:space-y-5 pl-5 text-sm md:text-[16px] w-full text-left font-poppins">
             <li>
-              Recent graduate with a Bachelor's degree in Computer Science and a
+              Recent graduate with a Bachelor&apos;s degree in Computer Science and a
               strong passion for developing innovative technology solutions.
               Possess a solid foundation in programming languages like C/ C++
               and Javascript, as well as experience in developing Modern web
@@ -42,7 +42,7 @@ export default function About(props: IAppProps) {
             </li>
             <li>
               In my free time, I enjoy playing chess and exploring new
-              technologies. If you're interested in working together or would
+              technologies. If you&apos;re interested in working together or would
               like to chat about software development, feel free to reach out!
             </li>
           </ul>

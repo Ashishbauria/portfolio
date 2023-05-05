@@ -4,7 +4,8 @@ import {
   MdOutlineArrowBackIos,
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
-import {BiLinkExternal} from "react-icons/bi"
+import { BiLinkExternal } from "react-icons/bi";
+import Image from "next/image";
 
 const Projects = () => {
   const projects = [
@@ -111,7 +112,7 @@ const Projects = () => {
         className="w-full flex flex-row space-x-5 px-2 md:p-10 snap-x snap-center snap-mandatory scroll-smooth items-center sm:mt-[10px] overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-slate-400/20 scrollbar-thumb-[#2c2c2c]"
       >
         {projects.map((item, index) => (
-          <div>
+          <div key={index}>
             <ProjectCard project={item} key={index} />
           </div>
         ))}
@@ -125,22 +126,30 @@ const ProjectCard = ({ project }: Props) => {
   const skills = project.skills;
   return (
     <article className="flex flex-col items-center rounded-xl space-y-7 flex-shrink-0 w-[340px] sm:w-[540px] md:w-[700px] xl:[900px] overflow-hidden snap-center p-4 xl:opacity-50 hover:opacity-100 shadow-sm shadow-black cursor-default transition-opacity duration-200 sm:py-10 bg-blend-overlay bg-transparent/40">
-      <img
-        src={`Images/${project.image}`}
-        alt=""
+      <Image
+        src={`/Images/${project.image}`}
+        alt="logo"
+        width={500}
+        height={500}
         className="w-20 h-20 sm:w-28 sm:h-28 rounded-full object-cover object-center mb-[-18px] border-2 border-gray-400 "
       />
       <div className="p-0 md:px-8">
         <h4 className="text-2xl sm:text-4xl font-light text-center uppercase">
           {project.type}
         </h4>
-        <div className="flex flex-row font-bold text-xl sm:text-2xl text-center sm:mt-2 items-center justify-center gap-3">{project.name}
-        <a href={project.source} target="_blank"><BiLinkExternal/></a>
+        <div className="flex flex-row font-bold text-xl sm:text-2xl text-center sm:mt-2 items-center justify-center gap-3">
+          {project.name}
+          <a href={project.source} target="_blank">
+            <BiLinkExternal />
+          </a>
         </div>
         <div className="flex gap-2 my-4 md:my-5">
           {skills.map((item: any, index: number) => (
-            <img
-              src={`Images/${item}`}
+            <Image
+              src={`/Images/${item}`}
+              alt="logo"
+              width={500}
+              height={500}
               className="rounded-full border-2 border-gray-600 object-cover w-8 h-8 sm:w-12 sm:h-12 hover:animate-pulse transition duration-300 ease-in-out"
             />
           ))}
