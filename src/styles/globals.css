@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Inter&family=Poppins&family=Roboto&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -11,8 +12,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 1;
+    --background-end-rgb: 10, 10, 30;
   }
 }
 
