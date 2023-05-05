@@ -150,6 +150,7 @@ const ProjectCard = ({ project }: Props) => {
               alt="logo"
               width={500}
               height={500}
+              key={index}
               className="rounded-full border-2 border-gray-600 object-cover w-8 h-8 sm:w-12 sm:h-12 hover:animate-pulse transition duration-300 ease-in-out"
             />
           ))}
